@@ -1,0 +1,30 @@
+{
+  "name": "pyigopm",
+  "description": "将v2ray部署在Heroku上",
+  "keywords": [
+    "v2ray VMess VLESS"
+  ],
+  "env": {
+    "PROTOCOL": {
+      "description": "协议VMess或VLESS，请填小写的vmess或vless",
+      "value": "vmess",
+      "required": true
+    },
+    "UUID": {
+      "description": "用户的主ID",
+      "value": "95b6f18a-0314-49aa-b97e-f82034f62168",
+      "required": false
+    },
+    "WS_PATH": {
+      "description": "websocket路径",
+      "value": "/ray",
+      "required": true
+    }
+  },
+  "website": "https://github.com/pyigopm/fghsd",
+  "repository": "https://github.com/pyigopm/fghsd",
+  "stack": "container",
+  "features": [
+    "runtime-dyno-metadata"
+  ]
+}
